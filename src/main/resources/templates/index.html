@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="banner">
+    <div class="navbar">
+        <img src="/images/bouquet.png" class="logo" alt="Company Logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/summary">Summary</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="app">
+    <div id="goal-form-container">
+        <h1>Daily Goal Tracker</h1>
+        <p>Set 3 goals you'd like to accomplish today:</p>
+        <form id="goal-form">
+            <input type="text" id="goal-input1" placeholder="Enter your goal" required>
+            <input type="text" id="goal-input2" placeholder="Enter your goal" required>
+            <input type="text" id="goal-input3" placeholder="Enter your goal" required>
+            <button type="submit">Add Goal</button>
+        </form>
+    </div>
+    <div id="goal-list-container" style="display: none;">
+        <h1>Your Goals</h1>
+        <ul id="goal-list"></ul>
+    </div>
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>
